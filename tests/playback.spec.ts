@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { baseURL } from '../playwright.config';
 import { tags } from '../support/lib/constants';
 import { BasePage } from '../support/lib/model/basePage';
 import { HomePage } from '../support/lib/model/homePage';
