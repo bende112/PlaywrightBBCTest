@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { baseURL, timeout } from '../playwright.config';
 import { tags } from '../support/lib/constants';
 import { BasePage } from '../support/lib/model/basePage';
 import { HomePage } from '../support/lib/model/homePage';
@@ -31,7 +30,7 @@ test(`User scroll right and then left on a carousel for more item ${tags.core}`,
    await pageSections.carouselItem();
 });
 
-test(`A section with carousel is displayed with section title ${tags.core}`, async ({ page }) => {
+test(`User verify that A section with carousel is displayed with section title ${tags.core}`, async ({ page }) => {
    await pageSections.selectProgrammes('New & Trending',1);
 });
 

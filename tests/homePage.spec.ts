@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { baseURL } from '../playwright.config';
 import { tags } from '../support/lib/constants';
 import { BasePage } from '../support/lib/model/basePage';
 import { HomePage } from '../support/lib/model/homePage';
@@ -29,7 +28,7 @@ test(`User navigate to bbc iplayer home page ${tags.core}`, async ({ page }) => 
 
 });
 
-test(`HomePage title is displayed ${tags.core}`, async ({ page }) => {
+test(`User verify that HomePage title is displayed ${tags.core}`, async ({ page }) => {
   await playbackProgram.assertTitleContains('BBC iPlayer - Home');
 });
 
